@@ -1,0 +1,83 @@
+
+/**
+ * Class named Divider containing divisor variable.
+ * 
+ * @author (GenevieveB) 
+ * @version (2016)
+ */
+public class Divider
+{
+   // instance variables 
+   private int divisor;
+   private double divide;
+   private double quotient;
+
+   /**
+    * Constructor for objects of class Divider which initialises 
+    * value to 2.
+    */
+   public Divider()
+   {
+      // initialise instance variables
+      super();
+      divisor = 2;
+      divide = 0;
+   }
+
+   /**
+    * Getter method to return value of the divisor.
+    */
+   public double getDivisor()
+   {
+      return divisor;
+   }
+
+   /**
+    * Setter method to set divisor to the value of 
+    * the argument aDivisor if more than 0.
+    */
+   public void setDivisor(int aDivisor)
+   {
+      if (aDivisor > 0)
+      {this.divisor = aDivisor;
+
+      }
+
+   }
+
+   /**
+    * Method to divide the value of a divide argument by the value of the 
+    * divisor.
+    */
+   public double divide(double aDivide)
+   {
+      this.divide = aDivide;
+
+      quotient = (aDivide/divisor);
+
+      return quotient;
+
+   }
+
+   /**
+    * Method to print whether quotient is positive, negative or 
+    * zero depending on value 
+    */
+   public void printSign(double quotient)
+   {
+      if (quotient > 0)
+      {
+         System.out.println("The quotient is positive");
+      }
+      else if (quotient < 0)
+      {
+         System.out.println("The quotient is negative");
+      }
+      else
+      {
+         System.out.println("The quotient is zero");
+      }
+
+
+   }
+}
